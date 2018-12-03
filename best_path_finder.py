@@ -63,7 +63,6 @@ ga = GeneticAlgorithm(mutationRate, populationSize, fitnessFunction, numberOfGen
 ga.startAlgorithm()
 end = time.time()
 print("time elapsed: "+str(end - start))
-print(ga.best)
 plt.figure(1) 
 plt.plot(ga.generation, ga.bestFitness)
 plt.xlabel('Generation')

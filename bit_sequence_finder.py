@@ -5,16 +5,12 @@
 """
 
 
-import numpy as np
-from random import randint
-from random import random
 from GeneticAlgorithm import GeneticAlgorithm
 import time
 import matplotlib.pyplot as plt
 
 
 bitSequence="01011111100101011001010010101"
-geneValues=["0","1"]
 
 #hiperparameters
 mutationRate = 0.05
@@ -24,6 +20,7 @@ numberOfGenes = len(bitSequence)
 #stopCondition Parameters
 maxGenerations=100
 
+geneValues=["0","1"]
 def fitnessFunction(individual):
     total=0
     for i in range(len(individual)):

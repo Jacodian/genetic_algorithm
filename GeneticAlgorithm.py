@@ -32,8 +32,6 @@ class GeneticAlgorithm:
         self.k = populationSize//2
 
         
-        
-        
     def startAlgorithm(self):
         self.popCreation()
         while True:
@@ -45,7 +43,6 @@ class GeneticAlgorithm:
                 self.best = self.population[self.popFitness.index(max(self.popFitness))]
             
             if self.stopCondition(self):
-
                 break
             self.reproduction()
             self.numberOfGenerations+=1
